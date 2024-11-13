@@ -1,0 +1,411 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navegacion{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navegacion:hover{
+    color: black;
+    transition-duration: 0.8s;
+}
+
+.navegacion-actual{
+    background-color: white;
+    padding: 13px;
+    border-radius: 90px;
+    color: #c63f14;
+    text-decoration: none;
+
+}
+
+#banner{
+    height: 170px;
+    background-image: url(./../assets/banner.png);
+    position: relative;
+    z-index: -1;
+}
+
+#imagotipo{
+    width: 330px;
+    height: auto;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    z-index: 0;
+}
+
+#navbar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    column-gap: 40px;
+    row-gap: 10px;
+    position: absolute;
+    right: 100px;
+    top: 75px;
+    z-index: 0;
+}
+
+#cuerpo-index{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+
+
+#portrait{
+    width: 450px;
+    height: auto;
+}
+
+.titulos{
+    font-family: La belle aurore;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.texto-presentacion{
+    width: 600px;
+    line-height: 1.5;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.negrita{
+    font-weight: 600;
+    color: #c63f14;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+.enlaces-presentacion{
+    color: white;
+    background-color: #c63f14;
+    border: 4px solid #79270f;
+    text-decoration: none;
+    border-radius: 500px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    font-size: 13px;
+}
+
+.enlaces-presentacion:hover{
+    color: white;
+    background-color: #943417;
+    transition-duration: 0.5s;
+}
+
+#galeria-index{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+.fotos{
+    width: 32.5%;
+    height: auto;
+
+}
+
+.ver-mas{
+    color: white;
+    text-decoration: none;
+    background-color: #c63f14;
+    padding: 15px;
+}
+.ver-mas:hover{
+    color: black;
+    transition-duration: 1s;
+}
+
+
+#pie-pagina{
+    height: 260px;
+    background: linear-gradient(-90deg, #c63f14, 80%, white);
+
+}
+
+#social-media{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    justify-content: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+    padding-top: 35px;
+}
+
+.rrss{
+    color: white;
+    text-decoration: none;
+}
+.rrss:hover{
+    color: black;
+}
+
+#aviso-legal{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 17px;
+    text-decoration: underline;
+}
+
+.enlaces-footer{
+    color: black;
+}
+.enlaces-footer:hover{
+    color: white;
+}
+
+#direccion{
+    margin-top: 20px;
+    font-size: small;
+    text-align: center;
+}
+
+.cuerpo-pagina{
+    margin-left: 15px;
+    margin-right: 15px;
+    min-height: 100vh;
+}
+.titulo-paginas{
+    text-align: center;
+    color: #79270f;
+}
+
+.linea{
+    color: #79270f;
+    width: 1000px;
+    background-color: #79270f;
+    border: 2px solid #79270f;
+    border-radius: 50px;
+}
+.seccion{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: la belle aurore;
+    font-size: 28px;
+    color: #943417;
+}
+
+.texto-diseño{
+    width: 800px;
+    padding-left: 30px;
+}
+
+#design{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+#branding1{
+    width: 30vw;
+    height: auto;
+}
+
+#branding2{
+    width: 100%;
+    height: auto;
+}
+
+.poster-instagram{
+    width: 30%;
+    height: 1%;
+}
+
+.galeria-B{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.poster-cuadrado{
+    width: 40%;
+    height: 1%;
+}
+
+.galeria-C{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.comic{
+    width: 50%;
+    height: 1%;
+}
+
+.seccionB{
+    text-align: center;
+    font-family: la belle aurore;
+    font-size: 28px;
+    color: #943417;
+    margin: 0;
+}
+
+.galeria-D{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.concept{
+    width: 49%;
+    height: 1%;
+}
+
+.concept2{
+    width: 42%;
+    height: 1%;
+}
+
+.concept3{
+    width: 27%;
+    height: 1%;
+}
+
+.galeria-E{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#video-contenido{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+
+}
+#demoreel{
+    width: 80%;
+}
+
+
+#formulario{
+    display: grid;
+    width: 26vw;
+    margin: 0 auto 0;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.formulario-campo{
+    display: grid;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.formulario-titulo{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#boton-envio{
+    background-color: #c63f14;
+    color: white;
+    border: 0;
+    border-radius: 70px;
+    padding: 15px;
+    font-family: montserrat;
+    margin-top: 30px;
+}
+
+#boton-envio:hover{
+    background-color: #943417;
+    cursor: pointer;
+}
+
+#msg{
+    resize: none;
+}
+
+#contenido-sobreMi{
+display: flex;
+flex-flow: row wrap;
+margin-top: 50px;
+margin-bottom: 70px;
+align-items: center;
+justify-content: center;
+gap: 70px;
+}
+
+#retrato-foto{
+    width:37vw;
+    height: 1%;
+}
+
+#contenido2-sobreMi{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto-sobreMi{
+    width: 480px;
+    white-space: pre-line;
+}
+
+#flama-foto{
+    width: 120px;
+    height: 1%;
+    margin-bottom: 30px;
+}
+
+#informacion{
+margin-right: 88px;;
+}
+
+
+#enlace-contacto{
+    text-decoration: none;
+    color: #c63f14;
+}
+#enlace-contacto:hover{
+    color: black;
+    transition-duration: 0.5s;
+}
+
+#contenido-contacto{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:center;
+    margin-top: 60px;
+}
+
+.contacto-iconos{
+    font-weight: 600;
+    color: #c63f14;
+    margin-bottom: 5px;
+}
+
+.informacion-A{
+    margin-bottom: 20px;
+}

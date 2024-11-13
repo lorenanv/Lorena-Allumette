@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorena Allumette</title>
+
+    <!-- Icono en pestaña abierta-->
+    <link rel="icon" href="./../assets/flama_newcolor.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Creepster&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+    <!-- Iconos redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./../css/estilos.css">
+</head>
+
+<body>
+    <!-- Cabecera compuesta por un logo y la barra de navegación -->
+    <header>
+        <div id="banner">
+            <img id="imagotipo"
+            src="./../assets/imagotipo_blanco.png" 
+            width="788" 
+            height="255" 
+            alt="Imagotipo de una flama y texto a su derecha: Lorena Allumette"
+            title="Imagotipo de Lorena Allumette">
+        </div>    
+        
+        <div id="navbar">
+            <div class="navbar-buttons">
+                <a class="navegacion" href="./../index.html">Inicio
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <a class="navegacion" href="./portfolio.html">Portfolio
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <a class="navegacion-actual" href="./presupuesto.html">Presupuesto
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <a class="navegacion" href="./about.html">Sobre mí
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <a class="navegacion" href="./contacto.html">Contacto
+                </a>
+            </div> 
+        </div>
+
+    </header>
+
+
+    <main class="cuerpo-pagina">
+
+        <div class="titulo-paginas">
+            <h1 class="titulos">Solicita presupuesto</h1>
+        </div>
+        <hr class="linea">
+
+        <!--Formulario de presupuesto-->
+        <form method="POST" enctype="multipart/form-data">
+
+            <div id="formulario">
+                <div class="formulario-campo">
+                    <label class="formulario-titulo" for="name">Nombre</label>
+                    <input type="text" 
+                    name="user_name" 
+                    id="name" 
+                    pattern="[a-zA-Z]{3,48}"
+                    required>
+                </div>
+                
+                <div class="formulario-campo">
+                    <label class="formulario-titulo" for="email">Email</label>
+                    <input type="email" 
+                    name="user_email" 
+                    id="email" 
+                    pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                    required>
+                </div>
+                
+                <div class="formulario-campo">
+                    <label class="formulario-titulo" for="tel">Teléfono</label>
+                    <input type="tel" 
+                    name="user_telefono" 
+                    id="tel"
+                    pattern="[0-9]{9}">
+                </div>
+                
+                <div class="formulario-campo">
+                    <label class="formulario-titulo" for="msg">Mensaje</label>
+                    <textarea id="msg" 
+                    name="user_text" 
+                    rows="7" 
+                    cols="30" 
+                    minlength="50"
+                    maxlength="300"
+                    required></textarea>
+                </div>
+            
+                <div class="formulario-campo">
+                    <label id="cbox-label">
+                    <input type="checkbox" id="cbox-privacy" value="cbox_privacy" required> Acepto la política de privacidad
+                    </label>
+                </div>
+
+                <div class="formulario-campo">
+                    <input id="boton-envio" type="submit">
+                </div>
+                
+            </div>
+
+        </form>
+
+    </main>
+
+    <!-- Pie de página compuesto por tres iconos de redes sociales e información legal -->
+    <footer id="pie-pagina">
+
+        <div id="social-media">
+            <a class="rrss" href="https://instagram.com/lorenallumette" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a class="rrss" href="https://vimeo.com/user208402128" target="_blank">
+                <i class="fa fa-vimeo"></i>
+            </a>
+            <a class="rrss" href="https://linkedin.com/in/lorenallumette" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div id="aviso-legal">
+            <a class="enlaces-footer" href="">Aviso legal</a>
+            <a class="enlaces-footer" href="">Política de privacidad</a>
+            <a class="enlaces-footer" href="">Cookies</a>
+        </div>
+        <div id="direccion">C/ Ramon Llull, 5. 46021 | Valencia, España
+        </div>
+
+    </footer>
+
+</body>
+</html>
