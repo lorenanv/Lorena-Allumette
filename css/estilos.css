@@ -173,6 +173,7 @@ body{
 }
 .enlaces-footer:hover{
     color: white;
+    cursor: pointer;
 }
 
 #direccion{
