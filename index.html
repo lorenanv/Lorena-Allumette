@@ -59,64 +59,94 @@
 
     </header>
     
-    <main id="cuerpo-index">
+    <main>
         
         <!-- Sección 1: Introducción -->
-        <section>
-            <h1 class="titulos">
-                ¡Bienvenid✴︎ a mi portfolio!
-            </h1>
-            <p class="texto-presentacion">
-                Mi nombre es Lorena. 
-                Soy una artista valenciana a la que le apasiona la <span class="negrita">animación</span>, la <span class="negrita">ilustración</span>
-                y el <span class="negrita">diseño gráfico</span>. Estoy graduada en Bellas Artes, pero sigo expandiendo mi formación (por ejemplo, he desarrollado esta web).
-                Si quieres saber más, ¡échale un vistazo! 
-            </p>
-
-            <!-- Enlaces CTA -->
-            <a class="enlaces-presentacion" href="./views/about.html">Sobre mí</a>
-            <a class="enlaces-presentacion" href="./views/portfolio.html">Portfolio</a>
-        </section>
-        
-        <!-- Sección 2: Retrato/ilustración -->
-        <section>
-            <img id="portrait"
-            src="./assets/icon.png"
-            width="3423"
-            height="4749"
-            alt="Retrato digital en estilo 'cartoon' de Lorena Allumette"
-            title="Icon estilo retrato de Lorena Allumette">
-        </section>
-
-        <!-- Sección 3: Muestra de galería -->
-        <section id="galeria-index">
-            <img class="fotos" 
-            src="./assets/joost_cuadrado.png"
-            width="1000" 
-            height="1000"
-            alt="Diseño digital estilo CD de la canción eurovisiva 'Europapa' de Joost Klein"
-            title="Diseño estilo CD de Joost Klein">
-
-            <img class="fotos" 
-            src="./assets/maneskin-poster.png"
-            width="1000" 
-            height="1000"
-            alt="Diseño digital estilo CD del grupo italiano Maneskin"
-            title="Diseño estilo CD de Maneskin">
-
-            <img class="fotos" 
-            src="./assets/bambie-poster.png"
-            width="1000" 
-            height="1000"
-            alt="Diseño digital estilo CD de la canción eurovisiva 'Doomsday Blue' de Bambie Thug"
-            title="Diseño estilo CD de Bambie Thug">
-
+        <section id="seccion1">
+            <!-- Bienvenida, texto presentación, CTA-->
+            <div>
+                <h1 class="titulos">
+                    ¡Bienvenid✴︎ a mi portfolio!
+                </h1>
+                <p class="texto-presentacion">
+                    Mi nombre es Lorena. 
+                    Soy una artista valenciana a la que le apasiona la <span class="negrita">animación</span>, la <span class="negrita">ilustración</span>
+                    y el <span class="negrita">diseño gráfico</span>. Estoy graduada en Bellas Artes, pero sigo expandiendo mi formación (por ejemplo, he desarrollado esta web).
+                    Si quieres saber más, ¡échale un vistazo! 
+                </p>
+    
+                <a class="enlaces-presentacion" href="./views/about.html">Sobre mí</a>
+                <a class="enlaces-presentacion" href="./views/portfolio.html">Portfolio</a>
+            </div>
+            
+            <!-- Retrato/ilustración -->
+            <div>
+                <img id="portrait"
+                src="./assets/icon.png"
+                width="3423"
+                height="4749"
+                alt="Retrato digital en estilo 'cartoon' de Lorena Allumette"
+                title="Icon estilo retrato de Lorena Allumette">
+            </div>
         </section>
 
-        <!-- CTA portfolio/galería -->
-        <div>
-            <a class="ver-mas" href="./views/portfolio.html">Ver más</a>
-        </div>
+        <!-- Sección 2: Muestra de galería -->
+        <section id="seccion2">
+
+            <h2 class="subtitulo">Recent artwork ✴︎</h2>
+            <div id="galeria-index">
+                <img class="fotos" 
+                src="./assets/joost_cuadrado.png"
+                width="1000" 
+                height="1000"
+                alt="Diseño digital estilo CD de la canción eurovisiva 'Europapa' de Joost Klein"
+                title="Diseño estilo CD de Joost Klein">
+    
+                <img class="fotos" 
+                src="./assets/maneskin-poster.png"
+                width="1000" 
+                height="1000"
+                alt="Diseño digital estilo CD del grupo italiano Maneskin"
+                title="Diseño estilo CD de Maneskin">
+    
+                <img class="fotos" 
+                src="./assets/bambie-poster.png"
+                width="1000" 
+                height="1000"
+                alt="Diseño digital estilo CD de la canción eurovisiva 'Doomsday Blue' de Bambie Thug"
+                title="Diseño estilo CD de Bambie Thug">
+            </div>
+
+            <!-- CTA portfolio/galería -->
+            <div id="ver-mas-caja">
+                <a class="ver-mas" href="./views/portfolio.html">Ver más</a>
+            </div>
+
+        </section>
+
+        <!-- Sección 3 -->
+        <section id="seccion3">
+            <div>
+                <img id="ballerina"
+                src="./assets/ballerina.gif" 
+                alt="Animación de 1 segundo de una niña bailarina en estilo cartoon"
+                title="Ballerina Animation"
+                width="1920"
+                height="1080">
+            </div>
+
+            <div>
+                <h2 class="subtitulo">Inspiración ✴︎</h2>
+                <p class="quote">“Animation is not the art of drawings that move but the 
+                    <span class="negrita">art of movements</span> that are drawn.” - Norman McLaren
+                </p>
+                <p class="quote">“What is most important in animation is the emotions and the ideas being portrayed. 
+                    I am a great believer of <span class="negrita">energy and emotion</span> .”
+                    - Ralph Bakshi
+                </p>
+            </div>
+            
+        </section>
 
     </main>
 
